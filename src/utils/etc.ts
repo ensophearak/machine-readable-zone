@@ -14,7 +14,6 @@ import {
   DEFAULT_PERSONAL_NUMBER,
 } from './validate-args';
 import { IntermediateCommandLineArgs } from './parse-args';
-import { EOL } from 'os';
 
 interface ArgsValidationResult {
   isValid: boolean;
@@ -28,7 +27,7 @@ const PASSPORT_NUMBER_CONSTRAINTS = {
   exactLength: PASSPORT_NUMBER_LENGTH,
 };
 
-export const NEW_LINE = EOL;
+export const NEW_LINE = '\n';
 
 export const extractSupportedCommandLineArgs = (
   args: IntermediateCommandLineArgs,
